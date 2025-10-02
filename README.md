@@ -11,4 +11,4 @@ pip install -r requirements.txt
 
 # após isso, é só rodar a aplicação
 
-uvicorn app.main:app --reload
+uvicorn main:app --reload
