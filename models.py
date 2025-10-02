@@ -4,4 +4,4 @@ from database import Base
 class Ip(Base):
     __tablename__="ips"
 
-    
+    ip=Column(Integer, primary_key=True, index=True)
