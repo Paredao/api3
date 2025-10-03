@@ -1,6 +1,6 @@
 from sqlalchemy.orm import Session
-from .models import Produto
-from .schemas import ProdutoCreate
+from models import Produto
+from schemas import ProdutoCreate
 
 def get_produto(db:Session, produto_ip:int):
     return db.query(Produto).filter(Produto.ip==produto_ip).first()
